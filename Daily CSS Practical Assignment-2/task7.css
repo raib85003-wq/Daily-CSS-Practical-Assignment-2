@@ -1,0 +1,347 @@
+/* =====================================================
+   TASK 7 - PERSONAL PROFILE CARD
+   ===================================================== */
+
+
+/* -----------------------------------------------------
+   1. UNIVERSAL SELECTOR
+   ----------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* -----------------------------------------------------
+   2. ELEMENT SELECTOR
+   ----------------------------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    /* Color using HEX */
+    background-color: #e8f0fe;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* -----------------------------------------------------
+   3. CLASS SELECTOR
+   ----------------------------------------------------- */
+
+.profile-card {
+    width: 90%;              /* % unit */
+    max-width: 450px;
+
+    margin: 5vh auto;        /* vh unit */
+    padding: 2em;            /* em unit */
+
+    /* Color using RGB */
+    background-color: rgb(255, 255, 255);
+
+    border: 3px solid #3498db;
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* -----------------------------------------------------
+   IMAGE PROPERTIES
+   ----------------------------------------------------- */
+
+.profile-image {
+    width: 180px;                 /* width */
+    height: 180px;                /* height */
+
+    max-width: 100%;              /* max-width */
+    min-width: 120px;             /* min-width */
+
+    max-height: 200px;            /* max-height */
+
+    /* Image fitting */
+    object-fit: cover;
+
+    /* Image position */
+    object-position: center;
+
+    /* Circular image */
+    border-radius: 50%;
+
+    border: 5px solid #3498db;
+
+    /* Shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+    /* Transparency */
+    opacity: 0.95;
+}
+
+
+/* -----------------------------------------------------
+   4. ID SELECTOR
+   ----------------------------------------------------- */
+
+#name {
+    color: #2c3e50;
+
+    /* Typography properties */
+    font-family: Georgia, serif;
+    font-size: 2rem;          /* rem unit */
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* -----------------------------------------------------
+   ELEMENT SELECTOR
+   ----------------------------------------------------- */
+
+h2 {
+    /* Color using RGB */
+    color: rgb(52, 152, 219);
+
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* -----------------------------------------------------
+   GROUPING SELECTOR
+   ----------------------------------------------------- */
+
+h1,
+h2,
+h3 {
+    margin-bottom: 10px;
+}
+
+
+/* -----------------------------------------------------
+   DESCENDANT SELECTOR
+   Selects h3 inside profile-card
+   ----------------------------------------------------- */
+
+.profile-card h3 {
+    color: #34495e;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* -----------------------------------------------------
+   TEXT PROPERTIES
+   ----------------------------------------------------- */
+
+.description {
+    color: #555;
+
+    /* 1. text-align */
+    text-align: justify;
+
+    /* 2. text-align-last */
+    text-align-last: center;
+
+    /* 3. text-decoration */
+    text-decoration: none;
+
+    /* 4. text-transform */
+    text-transform: none;
+
+    /* 5. text-indent */
+    text-indent: 15px;
+
+    /* 6. letter-spacing */
+    letter-spacing: 0.5px;
+
+    /* 7. word-spacing */
+    word-spacing: 2px;
+
+    /* 8. line-height */
+    line-height: 1.6;
+
+    /* 9. text-shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+    /* Typography */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+/* -----------------------------------------------------
+   SKILLS
+   ----------------------------------------------------- */
+
+.skills {
+    padding: 0;
+
+    list-style-type: none;
+
+    text-align: center;
+}
+
+
+/* -----------------------------------------------------
+   CHILD SELECTOR >
+   Selects only li directly inside .skills
+   ----------------------------------------------------- */
+
+.skills > li {
+    display: inline-block;
+
+    margin: 5px;
+    padding: 0.5em 1em;
+
+    /* Color using HEX */
+    background-color: #3498db;
+
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 0.9rem;
+}
+
+
+/* -----------------------------------------------------
+   SOCIAL LINKS
+   ----------------------------------------------------- */
+
+.social-links {
+    margin: 20px 0;
+}
+
+
+/* -----------------------------------------------------
+   DESCENDANT SELECTOR
+   Selects links inside social-links
+   ----------------------------------------------------- */
+
+.social-links a {
+    margin: 5px;
+
+    /* Color using HSLA */
+    color: hsla(210, 100%, 40%, 1);
+
+    font-weight: bold;
+
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #3498db;
+    text-decoration-thickness: 2px;
+}
+
+
+/* -----------------------------------------------------
+   ADJACENT SIBLING SELECTOR +
+   Selects the h3 immediately followed by .social-links
+   ----------------------------------------------------- */
+
+h3 + .social-links {
+    margin-top: 10px;
+}
+
+
+/* -----------------------------------------------------
+   GENERAL SIBLING SELECTOR ~
+   Selects elements after h2 that are siblings
+   ----------------------------------------------------- */
+
+h2 ~ p {
+    margin-top: 10px;
+}
+
+
+/* -----------------------------------------------------
+   ATTRIBUTE SELECTOR
+   Selects links containing href attribute
+   ----------------------------------------------------- */
+
+a[href] {
+    cursor: pointer;
+}
+
+
+/* -----------------------------------------------------
+   PSEUDO-CLASS
+   ----------------------------------------------------- */
+
+.social-links a:hover {
+    color: #e74c3c;
+}
+
+
+/* -----------------------------------------------------
+   CONTACT BUTTON
+   ----------------------------------------------------- */
+
+.contact-button {
+    width: 80%;
+
+    padding: 1em;
+
+    /* Color using RGBA */
+    background-color: rgba(52, 152, 219, 0.95);
+
+    color: white;
+
+    border: 2px solid #2980b9;
+
+    border-radius: 10px;
+
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Button hover effect */
+
+.contact-button:hover {
+    background-color: #2980b9;
+
+    transform: scale(1.05);
+}
+
+
+/* -----------------------------------------------------
+   RESPONSIVE DESIGN
+   ----------------------------------------------------- */
+
+@media (max-width: 500px) {
+
+    .profile-card {
+        width: 95%;
+        padding: 1.5em;
+    }
+
+    #name {
+        font-size: 7vw;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}

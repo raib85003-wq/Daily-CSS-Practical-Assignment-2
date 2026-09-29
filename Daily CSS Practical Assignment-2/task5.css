@@ -1,0 +1,276 @@
+/* =========================
+   GENERAL STYLING
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* Main heading */
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+}
+
+
+/* Introduction */
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CSS TEXT SHOWCASE
+   ========================= */
+
+.text-showcase {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+}
+
+
+/* Showcase heading */
+
+.text-showcase > h2 {
+    text-align: center;
+    color: #1d4ed8;
+}
+
+
+/* Each example */
+
+.example {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8fafc;
+    border-left: 4px solid #3b82f6;
+}
+
+
+.example h3 {
+    color: #334155;
+}
+
+
+/* =========================
+   1. COLOR
+   ========================= */
+
+/* Changes the color of the text */
+
+.color-example {
+    color: #2563eb;
+}
+
+
+/* =========================
+   2. TEXT-ALIGN
+   ========================= */
+
+/* Aligns text to the center */
+
+.text-align-example {
+    text-align: center;
+}
+
+
+/* =========================
+   3. TEXT-ALIGN-LAST
+   ========================= */
+
+/* Controls the alignment of the last line */
+
+.text-align-last-example {
+    text-align: justify;
+    text-align-last: right;
+}
+
+
+/* =========================
+   4. TEXT-DECORATION
+   ========================= */
+
+/* Adds a complete text decoration */
+
+.decoration-example {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   5. TEXT-DECORATION-LINE
+   ========================= */
+
+/* Specifies which line is used */
+
+.decoration-line-example {
+    text-decoration-line: underline;
+}
+
+
+/* =========================
+   6. TEXT-DECORATION-STYLE
+   ========================= */
+
+/* Makes the underline wavy */
+
+.decoration-style-example {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+
+/* =========================
+   7. TEXT-DECORATION-COLOR
+   ========================= */
+
+/* Changes the color of the decoration */
+
+.decoration-color-example {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+
+
+/* =========================
+   8. TEXT-DECORATION-THICKNESS
+   ========================= */
+
+/* Changes the thickness of the decoration */
+
+.decoration-thickness-example {
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+}
+
+
+/* =========================
+   9. TEXT-TRANSFORM
+   ========================= */
+
+/* Converts text into uppercase */
+
+.transform-example {
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   10. TEXT-INDENT
+   ========================= */
+
+/* Adds space before the first line */
+
+.indent-example {
+    text-indent: 50px;
+}
+
+
+/* =========================
+   11. LETTER-SPACING
+   ========================= */
+
+/* Adds space between letters */
+
+.letter-spacing-example {
+    letter-spacing: 5px;
+}
+
+
+/* =========================
+   12. WORD-SPACING
+   ========================= */
+
+/* Adds space between words */
+
+.word-spacing-example {
+    word-spacing: 15px;
+}
+
+
+/* =========================
+   13. LINE-HEIGHT
+   ========================= */
+
+/* Controls the vertical space between lines */
+
+.line-height-example {
+    line-height: 2;
+}
+
+
+/* =========================
+   14. TEXT-SHADOW
+   ========================= */
+
+/* Adds a shadow behind the text */
+
+.text-shadow-example {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px gray;
+}
+
+
+/* =========================
+   15. WHITE-SPACE
+   ========================= */
+
+/* Preserves spaces and line breaks */
+
+.white-space-example {
+    white-space: pre-line;
+}
+
+
+/* =========================
+   16. WORD-BREAK
+   ========================= */
+
+/* Allows long words to break */
+
+.word-break-example {
+    width: 300px;
+    word-break: break-all;
+    border: 1px solid #94a3b8;
+    padding: 10px;
+}
+
+
+/* =========================
+   17. OVERFLOW-WRAP
+   ========================= */
+
+/* Prevents long words from overflowing */
+
+.overflow-wrap-example {
+    width: 300px;
+    overflow-wrap: break-word;
+    border: 1px solid #94a3b8;
+    padding: 10px;
+}

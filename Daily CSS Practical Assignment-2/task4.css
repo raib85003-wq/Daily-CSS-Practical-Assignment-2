@@ -1,0 +1,162 @@
+/* General page styling */
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f1f5f9;
+    color: #334155;
+}
+
+
+/* Main article container */
+
+.article-container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+}
+
+
+/* Main heading */
+/* font-family, font-size, and font-weight */
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-align: center;
+}
+
+
+/* Subheading */
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2563eb;
+}
+
+
+/* Paragraphs */
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+/* Introduction paragraph */
+
+.intro {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-style: normal;
+}
+
+
+/* Quote */
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+
+    color: #475569;
+
+    border-left: 5px solid #2563eb;
+
+    padding-left: 20px;
+    margin: 25px 0;
+}
+
+
+/* List */
+
+li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TYPOGRAPHY PROPERTIES
+   ========================= */
+
+
+/* 1. font-family */
+
+.font-family-example {
+    font-family: "Courier New", monospace;
+}
+
+
+/* 2. font-size */
+
+.font-size-example {
+    font-size: 24px;
+}
+
+
+/* 3. font-style */
+
+.font-style-example {
+    font-style: italic;
+}
+
+
+/* 4. font-weight */
+
+.font-weight-example {
+    font-weight: bold;
+}
+
+
+/* 5. font-variant */
+
+.font-variant-example {
+    font-variant: small-caps;
+}
+
+
+/* 6. font-stretch */
+
+.font-stretch-example {
+    font-stretch: expanded;
+}
+
+
+/* Typography demonstration box */
+
+.typography-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eff6ff;
+    border: 2px solid #93c5fd;
+    border-radius: 8px;
+}
+
+
+/* Challenge:
+   Heading looks different from paragraph
+   while keeping the same professional design */
+
+.typography-box h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.typography-box p {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}

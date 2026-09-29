@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task 6 - Image Properties</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="task6.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CSS Image Properties</h1>
+
+        <p class="intro">
+            This webpage demonstrates different CSS properties
+            used for controlling images.
+        </p>
+
+
+        <!-- =========================
+             IMAGE 1
+             ========================= -->
+
+        <section class="image-card">
+
+            <h2>Image 1 - Normal Rectangular Image</h2>
+
+            <img
+                class="normal-image"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                alt="Mountain landscape">
+
+            <p>
+                This is a normal rectangular image.
+                It demonstrates width, height, border,
+                border-radius, and box-shadow.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             IMAGE 2
+             ========================= -->
+
+        <section class="image-card">
+
+            <h2>Image 2 - Circular Profile Image</h2>
+
+            <img
+                class="profile-image"
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500"
+                alt="Profile portrait">
+
+            <p>
+                This image is made circular using
+                border-radius: 50%.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             IMAGE 3
+             ========================= -->
+
+        <section class="image-card">
+
+            <h2>Image 3 - Object Fit: Cover</h2>
+
+            <img
+                class="cover-image"
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
+                alt="Lake and mountains">
+
+            <p>
+                The image uses object-fit: cover.
+                The image fills the fixed-size box.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             OBJECT-FIT EXPERIMENT
+             ========================= -->
+
+        <section class="experiment">
+
+            <h2>Object-Fit Experiment</h2>
+
+            <div class="image-grid">
+
+                <!-- CONTAIN -->
+
+                <div>
+                    <h3>object-fit: contain</h3>
+
+                    <img
+                        class="fit-image contain"
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                        alt="Mountain landscape">
+
+                    <p>
+                        The complete image is visible.
+                    </p>
+                </div>
+
+
+                <!-- COVER -->
+
+                <div>
+                    <h3>object-fit: cover</h3>
+
+                    <img
+                        class="fit-image cover"
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                        alt="Mountain landscape">
+
+                    <p>
+                        The box is completely filled.
+                    </p>
+                </div>
+
+
+                <!-- FILL -->
+
+                <div>
+                    <h3>object-fit: fill</h3>
+
+                    <img
+                        class="fit-image fill"
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                        alt="Mountain landscape">
+
+                    <p>
+                        The image stretches to fit the box.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OBJECT POSITION
+             ========================= -->
+
+        <section class="image-card">
+
+            <h2>Object Position</h2>
+
+            <img
+                class="position-image"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                alt="Mountain landscape">
+
+            <p>
+                This image demonstrates object-position.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             OPACITY
+             ========================= -->
+
+        <section class="image-card">
+
+            <h2>Image Opacity</h2>
+
+            <img
+                class="opacity-image"
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
+                alt="Lake and mountains">
+
+            <p>
+                This image has 0.6 opacity.
+            </p>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

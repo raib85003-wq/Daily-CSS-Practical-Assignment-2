@@ -1,0 +1,85 @@
+        /* 1. Universal selector: Selects all elements */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 2. Element selector: Selects all h1 elements */
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* 3. Class selector: Selects elements with class="intro" */
+        .intro {
+            color: green;
+            font-size: 18px;
+        }
+
+        /* 4. ID selector: Selects the element with id="main-heading" */
+        #main-heading {
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* 5. Grouping selector: Selects all h2 and h3 elements */
+        h2, h3 {
+            color: darkred;
+        }
+
+        /* 6. Descendant selector: Selects all p elements inside article */
+        article p {
+            color: blue;
+        }
+
+        /* 7. Child selector: Selects only direct li children of ul */
+        ul > li {
+            color: purple;
+            margin: 5px;
+        }
+
+        /* 8. Adjacent sibling selector: Selects the p immediately after h2 */
+        h2 + p {
+            background-color: lightyellow;
+            padding: 8px;
+        }
+
+        /* 9. General sibling selector: Selects all p elements after h3
+           that share the same parent */
+        h3 ~ p {
+            border-left: 4px solid orange;
+            padding-left: 10px;
+        }
+
+        /* 10. Attribute selector: Selects links with a target attribute */
+        a[target] {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Additional styling for the page */
+        body {
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 8px;
+        }

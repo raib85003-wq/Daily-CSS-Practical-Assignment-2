@@ -1,0 +1,187 @@
+
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* Introduction paragraph */
+.intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Card layout */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Common card styling */
+.card {
+    padding: 25px;
+    border: 3px solid;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* 1. Color Name */
+.color-name {
+    background-color: lightblue;
+    color: navy;
+    border-color: blue;
+}
+
+.color-name button {
+    background-color: navy;
+    color: white;
+    border-color: navy;
+}
+
+/* 2. HEX Color */
+.color-hex {
+    background-color: #dcfce7;
+    color: #166534;
+    border-color: #22c55e;
+}
+
+.color-hex button {
+    background-color: #166534;
+    color: #ffffff;
+    border-color: #166534;
+}
+
+/* 3. RGB Color */
+.color-rgb {
+    background-color: rgb(254, 215, 170);
+    color: rgb(124, 45, 18);
+    border-color: rgb(234, 88, 12);
+}
+
+.color-rgb button {
+    background-color: rgb(124, 45, 18);
+    color: rgb(255, 255, 255);
+    border-color: rgb(124, 45, 18);
+}
+
+/* 4. RGBA Color */
+.color-rgba {
+    background-color: rgba(147, 51, 234, 0.3);
+    color: rgb(88, 28, 135);
+    border-color: rgba(147, 51, 234, 0.8);
+}
+
+.color-rgba button {
+    background-color: rgba(147, 51, 234, 0.8);
+    color: white;
+    border-color: rgba(147, 51, 234, 0.8);
+}
+
+/* 5. HSL Color */
+.color-hsl {
+    background-color: hsl(190, 80%, 85%);
+    color: hsl(200, 90%, 25%);
+    border-color: hsl(200, 90%, 40%);
+}
+
+.color-hsl button {
+    background-color: hsl(200, 90%, 25%);
+    color: white;
+    border-color: hsl(200, 90%, 25%);
+}
+
+/* 6. HSLA Color */
+.color-hsla {
+    background-color: hsla(340, 80%, 60%, 0.3);
+    color: hsl(340, 80%, 30%);
+    border-color: hsla(340, 80%, 40%, 0.8);
+}
+
+.color-hsla button {
+    background-color: hsla(340, 80%, 40%, 0.9);
+    color: white;
+    border-color: hsla(340, 80%, 40%, 0.9);
+}
+
+/* Transparency section */
+.transparency-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.transparency-section h2 {
+    text-align: center;
+    color: #2563eb;
+}
+
+/* Common opacity box styling */
+.opacity-box {
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 100% opacity */
+.opacity-100 {
+    opacity: 1;
+}
+
+/* 50% opacity */
+.opacity-50 {
+    opacity: 0.5;
+}
+
+/* 20% opacity */
+.opacity-20 {
+    opacity: 0.2;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}

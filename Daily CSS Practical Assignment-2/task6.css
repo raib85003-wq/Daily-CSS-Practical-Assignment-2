@@ -1,0 +1,323 @@
+/* =========================
+   GENERAL STYLING
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* Main heading */
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+}
+
+
+/* Introduction */
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* =========================
+   COMMON IMAGE CARD
+   ========================= */
+
+.image-card {
+    background-color: white;
+
+    margin: 30px 0;
+    padding: 25px;
+
+    text-align: center;
+
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   IMAGE 1
+   NORMAL RECTANGULAR IMAGE
+   ========================= */
+
+.normal-image {
+
+    /* Width */
+    width: 500px;
+
+    /* Height */
+    height: 300px;
+
+    /* Maximum width */
+    max-width: 100%;
+
+    /* Minimum width */
+    min-width: 200px;
+
+    /* Maximum height */
+    max-height: 350px;
+
+    /* Image border */
+    border: 4px solid #2563eb;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Shadow */
+    box-shadow: 0 5px 15px gray;
+
+    /* Image fitting */
+    object-fit: contain;
+}
+
+
+/* =========================
+   IMAGE 2
+   CIRCULAR PROFILE IMAGE
+   ========================= */
+
+.profile-image {
+
+    width: 200px;
+
+    height: 200px;
+
+    /* Makes the image circular */
+    border-radius: 50%;
+
+    /* Crops image correctly */
+    object-fit: cover;
+
+    /* Controls position */
+    object-position: center;
+
+    /* Border */
+    border: 5px solid #2563eb;
+
+    /* Shadow */
+    box-shadow: 0 5px 15px gray;
+
+    /* Slight transparency */
+    opacity: 0.9;
+}
+
+
+/* =========================
+   IMAGE 3
+   OBJECT-FIT: COVER
+   ========================= */
+
+.cover-image {
+
+    width: 600px;
+
+    height: 300px;
+
+    max-width: 100%;
+
+    border: 4px solid #16a34a;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px gray;
+
+    /* Image fills the entire box */
+    object-fit: cover;
+
+    /* Position of the image */
+    object-position: center;
+}
+
+
+/* =========================
+   OBJECT-FIT EXPERIMENT
+   ========================= */
+
+.experiment {
+
+    background-color: white;
+
+    padding: 25px;
+
+    margin-top: 30px;
+
+    border-radius: 10px;
+
+    border: 2px solid #cbd5e1;
+}
+
+
+.experiment h2 {
+    text-align: center;
+    color: #2563eb;
+}
+
+
+/* Three image columns */
+
+.image-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    text-align: center;
+}
+
+
+/* Common properties */
+
+.fit-image {
+
+    width: 100%;
+
+    height: 200px;
+
+    border: 3px solid #334155;
+
+    border-radius: 8px;
+
+    object-position: center;
+}
+
+
+/* CONTAIN */
+
+/* Shows the complete image */
+
+.contain {
+
+    object-fit: contain;
+
+    background-color: #e2e8f0;
+}
+
+
+/* COVER */
+
+/* Fills the entire box and may crop the image */
+
+.cover {
+
+    object-fit: cover;
+}
+
+
+/* FILL */
+
+/* Stretches the image to fit the box */
+
+.fill {
+
+    object-fit: fill;
+}
+
+
+/* =========================
+   OBJECT POSITION
+   ========================= */
+
+.position-image {
+
+    width: 500px;
+
+    height: 250px;
+
+    max-width: 100%;
+
+    border: 4px solid #7c3aed;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+
+    /* Move image position */
+    object-position: top;
+
+    box-shadow: 0 5px 15px gray;
+}
+
+
+/* =========================
+   OPACITY
+   ========================= */
+
+.opacity-image {
+
+    width: 500px;
+
+    height: 250px;
+
+    max-width: 100%;
+
+    border: 4px solid #dc2626;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+
+    /* Makes image transparent */
+    opacity: 0.6;
+
+    box-shadow: 0 5px 15px gray;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .normal-image {
+        width: 100%;
+    }
+
+    .cover-image {
+        width: 100%;
+    }
+
+    .position-image {
+        width: 100%;
+    }
+
+    .opacity-image {
+        width: 100%;
+    }
+}
